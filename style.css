@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:dimgray;
+}
+
+.container{
+    height:100vh;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    text-align: center;
+
+}
+
+.title, .info{
+    text-align: center;
+}
+
+.cuadricula{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:0;
+}
+
+.cuadro{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid rgb(168, 168, 168);
+    text-align: center;
+    color:rgb(7, 255, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: background-color ease-in 0.2s;
+}
+
+.cuadro:hover{
+   
+    background-color:#cccc;
+    
+}
+
+.button{
+    display:inline-flex;
+    padding: 1rem 1rem;
+    background:red ;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: bold;
+    transition:color ease-out 0.3s;
+   
+}
+
+.button:hover{
+  
+    background:white ;
+    color: red;
+    border: 1px solid red;
+   
+}
